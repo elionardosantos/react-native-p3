@@ -1,20 +1,40 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
+import { styles } from './styles';
+import { Header } from './src/components/Header';
+import { Title } from './src/components/Title';
+import { InfoText } from './src/components/InfoText';
+import { Input } from './src/components/Input';
+import { LoginButton } from './src/components/LoginButton';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <LinearGradient
+      colors={['#3C1214', '#060101']}
+      start={{ x: 0.5, y: 0 }}
+      end={{ x: 0.5, y: 1 }}
+      style={styles.container}
+    >
+      <StatusBar style="inverted" />
+      <Header />
+      <Title
+        title={"Informe seus dados para entrar"}
+      />
+      <InfoText
+        text={"Ou crie uma conta"}
+      />
+      <Input
+        placeholder={"Usuário"}
+      />
+      <Input
+        placeholder={"Senha"}
+        secureTextEntry={true}
+      />
+      <LoginButton 
+        title={"Continuar"}
+      />
+    </LinearGradient>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
