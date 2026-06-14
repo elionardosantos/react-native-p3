@@ -11,11 +11,9 @@ export default function App() {
   return (
     <LinearGradient
       colors={['#3C1214', '#060101']}
-      start={{ x: 0.5, y: 0 }}
-      end={{ x: 0.5, y: 1 }}
       style={styles.container}
     >
-      <StatusBar style="inverted" />
+      <StatusBar style="light" />
       <Header />
       <Title
         title={"Informe seus dados para entrar"}
