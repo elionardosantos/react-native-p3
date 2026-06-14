@@ -25,10 +25,11 @@ export default function App() {
       />
       <Input
         placeholder={"Usuário"}
+        secureTextEntry={false} // mascara o texto digitado
       />
       <Input
         placeholder={"Senha"}
-        secureTextEntry={true}
+        secureTextEntry={true} // mascara o texto digitado
       />
       <LoginButton 
         title={"Continuar"}

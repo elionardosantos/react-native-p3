@@ -1,7 +1,7 @@
 import { TextInput, View } from "react-native";
 import { styles } from "./styles";
 
-export const Input = ({placeholder, ...rest}: {placeholder: string}) => {
+export const Input = ({placeholder, ...rest}: {placeholder: string; secureTextEntry: boolean;}) => {
     return (
         <View style={styles.container}>
             <TextInput style={styles.input}
