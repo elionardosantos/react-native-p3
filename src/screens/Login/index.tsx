@@ -56,6 +56,9 @@ export const Login = () => {
         title={"Continuar"}
         onPress={handleLogin}
       />
+      <InfoText 
+        text="usuario: admin / senha: 123"
+      />
     </LinearGradient>
   );
 }
