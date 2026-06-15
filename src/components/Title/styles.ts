@@ -2,8 +2,6 @@ import { StyleSheet } from 'react-native';
 
 export const styledTitle = StyleSheet.create({
   container: {
-    alignItems: 'center',
-    justifyContent: 'center',
     marginHorizontal: 20,
     marginVertical: 10,
   },
